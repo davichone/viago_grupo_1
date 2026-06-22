@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViaGO.pe - Destinos</title>
+    
+    <link rel="stylesheet" href="destinos.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "C9NQzFyI2RSPDWsRU",
+            });
+        })();
+    </script>
+</head>
+<body>
+    
+    <header id="header">
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="index.html" class="logo">
+                    <img src="img/LOGO.png" alt="ViaGo Perú">
+                </a>
+                <select class="language-select">
+                    <option>ES Español</option>
+                    <option>EN English</option>
+                </select>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio <i class="fa-solid fa-chevron-down"></i></a></li>
+                  <li><a href="destinos.html">Destinos <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="reservas.html">Reservas <i class="fa-solid fa-chevron-down"></i></a></li>
+              
+               <!--  <li><a href="#">Blog <i class="fa-solid fa-chevron-down"></i></a></li> -->
+                <li><a href="planes.html">Planes <i class="fa-solid fa-chevron-down"></i></a></li>
+            </ul>
+
+            <a href="https://wa.me/942169773" target="_blank" class="contact-btn">
+                <i class="fa-regular fa-comment"></i> Contáctanos
+            </a>
+
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="index.html">Inicio <i class="fa-solid fa-chevron-right"></i></a></li>
+            <li><a href="destinos.html">Destinos <i class="fa-solid fa-chevron-right"></i></a></li>
+            <li><a href="reservas.html">Reservas <i class="fa-solid fa-chevron-right"></i></a></li>
+            <li><a href="planes.html">Planes <i class="fa-solid fa-chevron-right"></i></a></li>
+        </ul>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <section class="destinations">
+        <div class="destinations-header">
+            <span> Explora el Perú!</span>
+            <h2>Destinos increíbles para tu próxima aventura</h2>
+        </div>
+
+        <div class="destinations-grid">
+            
+            <div class="destination-card span-2x2" 
+                 data-title="Lima" 
+                 data-price="Desde S/ 199" 
+                 data-description="Descubre la costa limeña, su gastronomía y atardeceres frente al mar." 
+                 data-image="img/lima.jpg">
+                <img src="img/lima.jpg" alt="Lima">
+                <div class="overlay-card"></div><h3>Lima</h3>
+            </div>
+            
+            <div class="destination-card span-1x2" 
+                 data-title="Cusco" 
+                 data-price="Desde S/ 499" 
+                 data-description="Vive la magia histórica de Cusco, sus calles de piedra y herencia inca." 
+                 data-image="img/cusco.jpg">
+                <img src="img/cusco.jpg" alt="Cusco">
+                <div class="overlay-card"></div><h3>Cusco</h3>
+            </div>
+            
+            <div class="destination-card span-1x1" 
+                 data-title="Puno" 
+                 data-price="Desde S/ 299" 
+                 data-description="Navega por el imponente Lago Titicaca y conoce las islas de los Uros." 
+                 data-image="img/puno.jpg">
+                <img src="img/puno.jpg" alt="Puno">
+                <div class="overlay-card"></div><h3>Puno</h3>
+            </div>
+            
+            <div class="destination-card span-2x1" 
+                 data-title="Arequipa" 
+                 data-price="Desde S/ 259" 
+                 data-description="Explora la imponente Ciudad Blanca custodiada por el volcán Misti." 
+                 data-image="img/arequipa.jpg">
+                <img src="img/arequipa.jpg" alt="Arequipa">
+                <div class="overlay-card"></div><h3>Arequipa</h3>
+            </div>
+            
+            <div class="destination-card span-2x2" 
+                 data-title="Machu Picchu" 
+                 data-price="Desde S/ 899" 
+                 data-description="La maravilla del mundo que debes visitar al menos una vez en la vida." 
+                 data-image="img/MachuPicchu.jpg">
+                <img src="img/MachuPicchu.jpg" alt="Machu Picchu">
+                <div class="overlay-card"></div><h3>Machu Picchu</h3>
+            </div>
+            
+            <div class="destination-card span-1x2" 
+                 data-title="Ica" 
+                 data-price="Desde S/ 189" 
+                 data-description="Aventura extrema en tubulares por las dunas de la Huacachina." 
+                 data-image="img/ica.jpg">
+                <img src="img/ica.jpg" alt="Ica">
+                <div class="overlay-card"></div><h3>Ica</h3>
+            </div>
+            
+            <div class="destination-card span-2x1" 
+                 data-title="Paracas" 
+                 data-price="Desde S/ 350" 
+                 data-description="Reserva natural con paisajes desérticos hermosos e islas llenas de fauna." 
+                 data-image="img/paracas.jpg">
+                <img src="img/paracas.jpg" alt="Paracas">
+                <div class="overlay-card"></div><h3>Paracas</h3>
+            </div>
+            
+            <div class="destination-card span-1x1" 
+                 data-title="Chan Chan" 
+                 data-price="Desde S/ 280" 
+                 data-description="Recorre la ciudadela de barro más grande de toda América en Trujillo." 
+                 data-image="img/chanchan.jpg">
+                <img src="img/chanchan.jpg" alt="Chan Chan">
+                <div class="overlay-card"></div><h3>Chan Chan</h3>
+            </div>
+
+            <div class="destination-card span-2x2" 
+                 data-title="Huaraz" 
+                 data-price="Desde S/ 380" 
+                 data-description="El paraíso del trekking. Explora la majestuosa Laguna 69 y los nevados de la Cordillera Blanca." 
+                 data-image="https://images.unsplash.com/photo-1596401057633-54a8fe8ef647?q=80&w=800&auto=format&fit=crop">
+                <img src="https://images.unsplash.com/photo-1596401057633-54a8fe8ef647?q=80&w=800&auto=format&fit=crop" alt="Huaraz">
+                <div class="overlay-card"></div><h3>Huaraz</h3>
+            </div>
+
+            <div class="destination-card span-2x1" 
+                 data-title="Iquitos" 
+                 data-price="Desde S/ 650" 
+                 data-description="Adéntrate en lo más profundo de la Amazonía peruana y navega por el Río Amazonas." 
+                 data-image="img/iquitos.jpg">
+                <img src="img/iquitos.jpg" alt="Iquitos">
+                <div class="overlay-card"></div><h3>Iquitos</h3>
+            </div>
+
+            <div class="destination-card span-1x2" 
+                 data-title="Máncora" 
+                 data-price="Desde S/ 420" 
+                 data-description="Disfruta del sol eterno del norte peruano, playas cálidas y excelente surf." 
+                 data-image="https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?q=80&w=800&auto=format&fit=crop">
+                <img src="https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?q=80&w=800&auto=format&fit=crop" alt="Máncora">
+                <div class="overlay-card"></div><h3>Máncora</h3>
+            </div>
+            <div class="destination-card span-1x2" 
+                 data-title="Villa Rica" 
+                 data-price="Desde S/ 320" 
+                 data-description="Disfruta de la Laguna Oconal y el mejor cafe del mundo!" 
+                 data-image="img/villarica.jpg">
+                <img src="img/villarica.jpg" alt="Villa Rica">
+                <div class="overlay-card"></div><h3>Villa Rica</h3>
+            </div>
+
+            <div class="destination-card span-1x1" 
+                 data-title="Tarapoto" 
+                 data-price="Desde S/ 310" 
+                 data-description="Descubre la selva alta, impresionantes caídas de agua y la mística Laguna Azul." 
+                 data-image="img/arequipa2.jpg">
+                <img src="img/arequipa2.jpg" alt="Tarapoto">
+                <div class="overlay-card"></div><h3>Tarapoto</h3>
+            </div>
+
+            <div class="destination-card span-1x1" 
+                 data-title="Puno" 
+                 data-price="Desde S/ 299" 
+                 data-description="Navega por el imponente Lago Titicaca y conoce las islas de los Uros." 
+                 data-image="img/puno.jpg">
+                <img src="img/puno.jpg" alt="Puno">
+                <div class="overlay-card"></div><h3>Puno</h3>
+            </div>
+
+        </div>
+
+        <div class="custom-destination-cta">
+            <p>¿No encuentras tu destino deseado?</p>
+            <h3>¡Haznoslo saber y lo diseñamos a tu medida!</h3>
+            <button class="open-custom-modal-btn" id="openCustomBtn">Solicitar Destino Personalizado</button>
+        </div>
+    </section>
+
+    <div class="modal" id="destinationModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <img src="" id="modalImage" alt="Destino">
+            <div class="modal-info">
+                <h2 id="modalTitle"></h2>
+                <p id="modalDescription"></p>
+                <span id="modalPrice"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="customModal">
+        <div class="modal-content custom-form-content">
+            <span class="close-modal" id="closeCustomModal">&times;</span>
+            <div class="custom-modal-header">
+                <h3>Tu Destino Ideal ✈️</h3>
+            </div>
+            <div class="custom-modal-body">
+                <form id="customDestinationForm" class="custom-form">
+                    <div class="form-group">
+                        <label>¿Qué ruta o ciudad te gustaría visitar?</label>
+                        <input type="text" id="customRuta" placeholder="Ej: Tarapoto, Chachapoyas...">
+                        <span class="error-msg" id="errRuta">Por favor, escribe un destino.</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Cantidad de personas que viajarían</label>
+                        <input type="number" id="customPersonas" placeholder="Ej: 2">
+                        <span class="error-msg" id="errPersonas">Ingresa un número válido (mínimo 1).</span>
+                    </div>
+
+                    <div class="form-grid-2">
+                        <div class="form-group">
+                            <label>Días de viaje</label>
+                            <input type="number" id="customDias" placeholder="Ej: 4">
+                            <span class="error-msg" id="errDias">Mínimo 1 día.</span>
+                        </div>
+                        <div class="form-group">
+                            <label>Presupuesto estimado (S/)</label>
+                            <input type="number" id="customPresupuesto" placeholder="Ej: 600">
+                            <span class="error-msg" id="errPresupuesto">Ingresa un monto aproximado.</span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-custom-btn" id="btnSendCustom">Enviar Solicitud</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <a href="index.html" class="footer-logo-link">
+                    <img src="img/LOGO.png" alt="ViaGo Perú" class="footer-logo">
+                </a>
+                <p>Viajes a medida para descubrir el vibrante Perú. Explora el mundo a través de experiencias culturales únicas y guías expertos.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://wa.me/942169773" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="destinos.html">Destinos</a></li>
+                    <li><a href="planes.html">Planes</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contáctanos</h4>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-location-dot"></i> Lima, Perú</li>
+                    <li><i class="fa-solid fa-envelope"></i> info@viago.pe</li>
+                    <li><i class="fa-solid fa-phone"></i> +51 942 169 773</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 ViaGO.pe. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Lógica del Modal Detalle Corriente
+        const destinationCards = document.querySelectorAll(".destination-card");
+        const modal = document.getElementById("destinationModal");
+        const modalImage = document.getElementById("modalImage");
+        const modalTitle = document.getElementById("modalTitle");
+        const modalDescription = document.getElementById("modalDescription");
+        const modalPrice = document.getElementById("modalPrice");
+        const closeModal = document.getElementById("closeModal");
+
+        destinationCards.forEach(card => {
+            card.addEventListener("click", () => {
+                modal.classList.add("active");
+                modalImage.src = card.dataset.image; 
+                modalTitle.textContent = card.dataset.title;
+                modalDescription.textContent = card.dataset.description;
+                modalPrice.textContent = card.dataset.price;
+            });
+        });
+
+        closeModal.addEventListener("click", () => {
+            modal.classList.remove("active");
+        });
+
+        modal.addEventListener("click", (e) => {
+            if(e.target === modal) modal.classList.remove("active");
+        });
+
+        // Lógica del Scroll del Header
+        const header = document.getElementById("header");
+        window.addEventListener("scroll", () => {
+            if(window.scrollY > 50) header.classList.add("scrolled");
+            else header.classList.remove("scrolled");
+        });
+
+        // Lógica del Menú Móvil
+        const hamburger = document.getElementById("hamburger");
+        const mobileMenu = document.getElementById("mobileMenu");
+        const overlay = document.getElementById("overlay");
+
+        hamburger.addEventListener("click", () => {
+            mobileMenu.classList.toggle("active");
+            overlay.classList.toggle("active");
+        });
+
+        overlay.addEventListener("click", () => {
+            mobileMenu.classList.remove("active");
+            overlay.classList.remove("active");
+        });
+
+        // ================= NUEVA LÓGICA: VENTANA EMERGENTE A MEDIDA Y EMAILJS =================
+        const customModal = document.getElementById("customModal");
+        const openCustomBtn = document.getElementById("openCustomBtn");
+        const closeCustomModal = document.getElementById("closeCustomModal");
+        const customForm = document.getElementById("customDestinationForm");
+        const btnSendCustom = document.getElementById("btnSendCustom");
+
+        // Abrir ventana a medida
+        openCustomBtn.addEventListener("click", () => {
+            customModal.classList.add("active");
+        });
+
+        // Cerrar ventana a medida
+        closeCustomModal.addEventListener("click", () => {
+            customModal.classList.remove("active");
+        });
+
+        customModal.addEventListener("click", (e) => {
+            if(e.target === customModal) customModal.classList.remove("active");
+        });
+
+        // Función para cambiar estilos de error
+        function setValidationStyle(input, errorId, isValid) {
+            const errSpan = document.getElementById(errorId);
+            if(!isValid) {
+                input.style.border = "1px solid #ff4757";
+                input.style.boxShadow = "0 0 0 3px rgba(255, 71, 87, 0.2)";
+                errSpan.style.display = "block";
+            } else {
+                input.style.border = "1px solid #19f2a3";
+                input.style.boxShadow = "none";
+                errSpan.style.display = "none";
+            }
+        }
+
+        // Evento Submit de la solicitud a medida (Semana 13)
+        customForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            const ruta = document.getElementById("customRuta");
+            const personas = document.getElementById("customPersonas");
+            const dias = document.getElementById("customDias");
+            const presupuesto = document.getElementById("customPresupuesto");
+
+            let isFormValid = true;
+
+            if(ruta.value.trim() === "") { setValidationStyle(ruta, "errRuta", false); isFormValid = false; }
+            else { setValidationStyle(ruta, "errRuta", true); }
+
+            if(personas.value === "" || parseInt(personas.value) < 1) { setValidationStyle(personas, "errPersonas", false); isFormValid = false; }
+            else { setValidationStyle(personas, "errPersonas", true); }
+
+            if(dias.value === "" || parseInt(dias.value) < 1) { setValidationStyle(dias, "errDias", false); isFormValid = false; }
+            else { setValidationStyle(dias, "errDias", true); }
+
+            if(presupuesto.value === "" || parseInt(presupuesto.value) < 1) { setValidationStyle(presupuesto, "errPresupuesto", false); isFormValid = false; }
+            else { setValidationStyle(presupuesto, "errPresupuesto", true); }
+
+            if(isFormValid) {
+                btnSendCustom.textContent = "Enviando...";
+                btnSendCustom.disabled = true;
+
+                // Mapeo adaptado a las variables del Template existente para no romper nada
+                const templateParams = {
+                    nombre: "Ruta Solicitada: " + ruta.value,
+                    whatsapp: "Revisar vía Email (Destino a medida)",
+                    personas: personas.value,
+                    fecha: "Días calculados: " + dias.value,
+                    plan: "Personalizado (A medida)",
+                    comentarios: "Presupuesto estimado asignado por el cliente: S/ " + presupuesto.value
+                };
+
+                emailjs.send("service_0isr6he", "template_xadg2jc", templateParams)
+                    .then(function() {
+                        btnSendCustom.textContent = "¡Enviado con Éxito! \u2714";
+                        btnSendCustom.style.background = "#19f2a3";
+                        btnSendCustom.style.color = "#000";
+                        
+                        setTimeout(() => {
+                            customModal.classList.remove("active");
+                            customForm.reset();
+                            btnSendCustom.textContent = "Enviar Solicitud";
+                            btnSendCustom.style.background = "#000";
+                            btnSendCustom.style.color = "#fff";
+                            
+                            // Resetear bordes
+                            [ruta, personas, dias, presupuesto].forEach(inp => {
+                                inp.style.border = "none";
+                                inp.style.boxShadow = "none";
+                            });
+                        }, 2500);
+                    }, function(error) {
+                        alert("Hubo un fallo técnico al despachar tu solicitud.");
+                        console.log("Fallo EmailJS:", error);
+                        btnSendCustom.textContent = "Enviar Solicitud";
+                        btnSendCustom.disabled = false;
+                    });
+            }
+        });
+    </script>
+</body>
+</html>
